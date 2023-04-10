@@ -33,11 +33,14 @@ const Index = ({ stats, topRepos }: AppProps) => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ ease: "easeOut", duration: 0.15 }}
-            className="mt-24 w-full mb-32"
+            className="mt-24 w-full mb-32" 
         >
-            <h1 className="mt-36 font-bold text-4xl md:text-5xl mb-4">/rav</h1>
+            {/* <h1 className="mt-36 font-bold text-green-500 text-4xl md:text-5xl mb-4">/rav</h1> */}
+            <a 
+            href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=roboto-bold-700&weight=800&size=40&duration=2400&pause=100&color=00F747&repeat=false&width=435&lines=%2Frav+;%2Fartist;%2Fdeveloper;%2Fpenspinner;%2Frav" alt="Typing SVG" />
+            </a>
             <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-12">
-                I have no idea what i'm doing, but i'm doing it anyway. Here's what I use:
+                I have no idea what i'm doing, but here's what I use to do it:
             </p>
             <div className="w-full flex flex-wrap flex-row justify-center p-1 border border-slate-800 rounded-md bg-white/10 dark:bg-black/10 mb-12">
                 <TechItem icon={SiTypescript} name="TypeScript" />
@@ -54,7 +57,7 @@ const Index = ({ stats, topRepos }: AppProps) => {
 
             <h2 className="font-medium text-3xl mb-4">Projects 🛠️</h2>
             <p className="text-gray-800 dark:text-gray-300 leading-6 font-light tracking-wide mb-6">
-                In my free time, I enjoy creating open source projects on{" "}
+                Here are some of my projects on{" "}
                 <a
                     href="https://github.com/ravgoyt"
                     rel="noreferrer"
@@ -62,10 +65,7 @@ const Index = ({ stats, topRepos }: AppProps) => {
                 >
                     GitHub
                 </a>
-                , so I can learn from others and showcase what I know. In total, all of my open sourced projects have
-                earnt me <span className="font-bold text-black dark:text-slate-200">{stats.stars}</span> stars on
-                GitHub, and <span className="font-bold text-black dark:text-slate-200">{stats.forks}</span> forks. Below
-                are some of my most popular repositories.
+                .
             </p>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 mb-12 gap-2">
                 {topRepos.map((repo: Record<string, any>) => {
